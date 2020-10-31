@@ -3,7 +3,12 @@ package _03_char._2_string_methods;
 
 public class StringMethods {
 	public static void main(String[] args) {
-		
+		String x="ABC";
+		System.out.println(x.charAt(2));
+		System.out.println(x.length());
+		for(int y=0; y<x.length(); y++) {
+			System.out.println(x.charAt(y));
+		}
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
 
 		// 2. Print the 3rd char of your String to the console.
