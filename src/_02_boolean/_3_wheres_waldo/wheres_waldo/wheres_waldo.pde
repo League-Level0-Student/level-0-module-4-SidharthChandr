@@ -11,6 +11,8 @@ void setup() {
   //Find a Where's Waldo picture and drop it into this sketch.     
   PImage waldo = loadImage("waldo.jpg"); // Change this to match your file name.
   size(600, 400); 
+  waldo.resize(600, 400);
+  background(waldo);
   // Resize your waldo picture to the same size as the sketch
   
   // Make the waldo image your sketch background

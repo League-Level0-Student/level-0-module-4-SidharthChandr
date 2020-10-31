@@ -11,8 +11,14 @@ public class SleepyHead {
 
 		/************************  SLEEPY HEAD  **************************/
 		boolean isWeekend;
+		String X=JOptionPane.showInputDialog("What day is it?");
 		// Write code to ask the user what day it is.
-        
+        if(X.equals("saturday")||X.equals("sunday")){
+        	JOptionPane.showMessageDialog(null, "You can sleep");
+        }
+        else {
+        	JOptionPane.showMessageDialog(null, "GET UP!!!!!!!!!!!!!!!!!");
+        }
 		// Set the boolean isWeekend based on the value they enter
 		
 		
@@ -24,6 +30,14 @@ public class SleepyHead {
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;
+		String Y=JOptionPane.showInputDialog("What percentage scored on last test?");
+		int Z=Integer.parseInt(Y);
+		if(Z>70) {
+			JOptionPane.showMessageDialog(null, "YAY you passed");
+		}
+		if(Z<70) {
+			JOptionPane.showMessageDialog(null, "Do better Next time good luck!");
+		}
 		// Write code to ask the user what percentage they scored in their last exam
 
 		
@@ -44,6 +58,7 @@ public class SleepyHead {
 			String gameOver = JOptionPane.showInputDialog("is game over");
 			if (gameOver.equalsIgnoreCase("yes"))
 				gameIsOver = true;
+				JOptionPane.showMessageDialog(null, "game is over");
 			
 			// If they answer "yes", change gameIsOver to true
 
